@@ -4,8 +4,8 @@ while IFS=, read -r num1 num2
 
 do
 
-touch inputFile
+touch /csvserver/inputFile
 
-echo "$num1, $num2" >> inputFile
+echo "$num1, $num2" >> /csvserver/inputFile
 
-done < /root/pro/csvserver/solution/list.csv 
+done < /csvserver/list.csv 
